@@ -1,0 +1,20 @@
+{
+  "name": "unplugin-typia-repository",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-patch": "^3.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "5.5.2"
+  },
+  "dependencies": {
+    "@ryoppippi/unplugin-typia": "npm:@jsr/ryoppippi__unplugin-typia",
+    "axios": "^1.7.2",
+    "typia": "^6.4.3"
+  },
+  "scripts": {
+    "prepare": "ts-patch install && typia patch"
+  }
+}
